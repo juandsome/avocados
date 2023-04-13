@@ -6,4 +6,5 @@ admin.site.register(Cliente)
 admin.site.register(Producto)
 admin.site.register(Detalle)
 admin.site.register(Factura)
+#si
 
