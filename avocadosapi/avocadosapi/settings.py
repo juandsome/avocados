@@ -46,11 +46,12 @@ INSTALLED_APPS = [
 ]
 DATETIME_FORMAT = 'd/m/Y H:i:s'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-ALLOWED_HOSTS = ['fbeb-181-233-91-19.ngrok-free.app/', '127.0.0.1','metal-views-drop-181-233-91-19.loca.lt']
-CSRF_TRUSTED_ORIGINS = ["https://39ea-181-233-91-19.ngrok-free.app", "http://127.0.0.1:3000"]
+ALLOWED_HOSTS = ['fbeb-181-233-91-19.ngrok-free.app/', '127.0.0.1','metal-views-drop-181-233-91-19.loca.lt', 'deleitatecabimas.com', 'https://deleitatecabimas.com', 'http://deleitatecabimas.com','e04d-181-233-91-19.ngrok-free.app','www.deleitatecabimas.com', "127.0.0.1:8000"]
+CSRF_TRUSTED_ORIGINS = ["https://39ea-181-233-91-19.ngrok-free.app", "http://127.0.0.1:3000",'https://e04d-181-233-91-19.ngrok-free.app','https://deleitatecabimas.com',"http://127.0.0.1:8000"]
 CORS_ORIGIN_WHITELIST= (
-    'http://localhost:3000', 'https://39ea-181-233-91-19.ngrok-free.app','http://127.0.0.1:3000'
+    'http://localhost:3000', 'https://39ea-181-233-91-19.ngrok-free.app','http://127.0.0.1:3000','https://e04d-181-233-91-19.ngrok-free.app',"http://127.0.0.1:8000"
 )
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -142,7 +143,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "https://deleitatecabimas.com/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
